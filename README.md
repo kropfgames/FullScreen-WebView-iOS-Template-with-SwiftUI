@@ -1,4 +1,4 @@
-# FullScreen-WebView-iOS-Template-with-SwiftUI
+# FullScreen WebView iOS Template with SwiftUI
 
 Simple easy beginner perfect boilerplate sample of WKWebView
 
