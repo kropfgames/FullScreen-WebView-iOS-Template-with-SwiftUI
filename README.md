@@ -2,12 +2,12 @@
 
 Simple easy beginner perfect boilerplate sample of WKWebView
 
-Try now! 
+# Try now! 
 
-TO RUN:
+# TO RUN:
 Open in Xcode
 
-TO DO:
+# TO DO:
 
 First check if internet is on
 
