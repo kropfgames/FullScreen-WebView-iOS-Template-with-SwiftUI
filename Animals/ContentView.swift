@@ -1,10 +1,47 @@
-import SwiftUI
+import SwiftUI 
 
 struct ContentView: View {
     
+    @StateObject var network = Network()
+    
+    struct GrowingButton: ButtonStyle {
+        func makeBody(configuration: Configuration) -> some View {
+            configuration.label
+                .font(.largeTitle)
+                .padding()
+                .padding()
+                .background(Color.accentColor)
+                .foregroundColor(.white)
+                .clipShape(Capsule())
+                .scaleEffect(configuration.isPressed ? 1.2 : 1)
+                .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
+        }
+    }
+    
+    func reload() {
+       _ = network.checkConnection()
+    }
+    
     var body: some View {
         ZStack {
-            WebView(url: URL(string: "https://animals.bio")!)
+             
+            if (network.checkConnection()) {
+                WebView(url: URL(string: "https://animals.bio")!)
+            }
+            else {
+                VStack {
+                    Text("You need internet to play Animals.bio")
+                        .font(.largeTitle)
+                        .padding()
+                        .padding()
+                        .multilineTextAlignment(.center)
+                    Button("Reload") {
+                        reload()
+                    }
+                    .buttonStyle(GrowingButton())
+                    .padding() 
+                }
+            }
         }
         .ignoresSafeArea()
     }
