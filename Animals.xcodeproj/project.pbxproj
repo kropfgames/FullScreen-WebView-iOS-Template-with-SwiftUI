@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA22166128C4304500F59638 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22166028C4304500F59638 /* Network.swift */; };
 		FAEB3CD928B33D2700D0E42D /* AnimalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB3CD828B33D2700D0E42D /* AnimalsApp.swift */; };
 		FAEB3CDB28B33D2700D0E42D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB3CDA28B33D2700D0E42D /* ContentView.swift */; };
 		FAEB3CDD28B33D2A00D0E42D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEB3CDC28B33D2A00D0E42D /* Assets.xcassets */; };
@@ -15,7 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FAEB3CD528B33D2700D0E42D /* Animals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA22166028C4304500F59638 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FA2AC52228CD09A400076881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FAEB3CD528B33D2700D0E42D /* Animals.bio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animals.bio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEB3CD828B33D2700D0E42D /* AnimalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsApp.swift; sourceTree = "<group>"; };
 		FAEB3CDA28B33D2700D0E42D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAEB3CDC28B33D2A00D0E42D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,7 +48,7 @@
 		FAEB3CD628B33D2700D0E42D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAEB3CD528B33D2700D0E42D /* Animals.app */,
+				FAEB3CD528B33D2700D0E42D /* Animals.bio.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,11 +56,13 @@
 		FAEB3CD728B33D2700D0E42D /* Animals */ = {
 			isa = PBXGroup;
 			children = (
+				FA2AC52228CD09A400076881 /* Info.plist */,
 				FAEB3CD828B33D2700D0E42D /* AnimalsApp.swift */,
 				FAEB3CDA28B33D2700D0E42D /* ContentView.swift */,
 				FAEB3CDC28B33D2A00D0E42D /* Assets.xcassets */,
 				FAEB3CDE28B33D2A00D0E42D /* Preview Content */,
 				FAEB3CE628B33E0300D0E42D /* WebView.swift */,
+				FA22166028C4304500F59638 /* Network.swift */,
 			);
 			path = Animals;
 			sourceTree = "<group>";
@@ -87,7 +92,7 @@
 			);
 			name = Animals;
 			productName = Animals;
-			productReference = FAEB3CD528B33D2700D0E42D /* Animals.app */;
+			productReference = FAEB3CD528B33D2700D0E42D /* Animals.bio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,6 +147,7 @@
 			files = (
 				FAEB3CE728B33E0300D0E42D /* WebView.swift in Sources */,
 				FAEB3CDB28B33D2700D0E42D /* ContentView.swift in Sources */,
+				FA22166128C4304500F59638 /* Network.swift in Sources */,
 				FAEB3CD928B33D2700D0E42D /* AnimalsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,21 +277,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Animals/Preview Content\"";
-				DEVELOPMENT_TEAM = 8A85R8J4UM;
+				DEVELOPMENT_TEAM = AJ3ZRHSX44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Animals/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bio.animals;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 0.1a;
+				PRODUCT_BUNDLE_IDENTIFIER = test.testgame.test;
+				PRODUCT_NAME = Animals.bio;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,21 +308,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Animals/Preview Content\"";
-				DEVELOPMENT_TEAM = 8A85R8J4UM;
+				DEVELOPMENT_TEAM = AJ3ZRHSX44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Animals/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bio.animals;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 0.1a;
+				PRODUCT_BUNDLE_IDENTIFIER = test.testgame.test;
+				PRODUCT_NAME = Animals.bio;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

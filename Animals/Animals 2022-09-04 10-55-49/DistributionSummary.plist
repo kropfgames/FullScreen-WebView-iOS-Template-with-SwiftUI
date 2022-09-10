@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Animals.bio.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>4888C7789EB322F8BA11BE2243E42C42818B06DB</string>
+				<key>dateExpires</key>
+				<string>2023-08-21</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>8A85R8J4UM.bio.animals.game</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>8A85R8J4UM</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>Animals.bio.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>859f3cc0-c286-491b-8461-f245a24c66f4</string>
+				<key>dateExpires</key>
+				<string>2023-08-21</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: *</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>8A85R8J4UM</string>
+				<key>name</key>
+				<string>IO Games Inc.</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>
