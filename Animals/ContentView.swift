@@ -1,7 +1,7 @@
 import SwiftUI 
 
 struct ContentView: View {
-    
+ 
     @StateObject var network = Network()
     
     struct GrowingButton: ButtonStyle {
@@ -19,14 +19,18 @@ struct ContentView: View {
     }
     
     func reload() {
-       _ = network.checkConnection()
-    }
+       _ = network.checkConnection() 
+    } 
     
+    let defaults = UserDefaults.standard;
+ 
     var body: some View {
         ZStack {
              
             if (network.checkConnection()) {
-                WebView(url: URL(string: "https://animals.bio")!)
+                WebView(url: URL(string: "https://animals.bio?v=\(defaults.integer(forKey:"counter"))")!).onAppear {
+                    defaults.set(defaults.integer(forKey:"counter") + 1 , forKey: "counter")
+                }
             }
             else {
                 VStack {
