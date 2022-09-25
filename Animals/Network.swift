@@ -18,7 +18,7 @@ class Network: ObservableObject {
                     self.connected = false
             }
         }
-        monitor.start(queue: queue)
+        monitor.start(queue: queue) 
         return self.connected
     }
 }
